@@ -7,8 +7,8 @@ The data folder holds one Excel file per sample, in per-pathogen subfolders (HHV
 PRJNA388483 and PRJNA494846 each contain two host cell types and were split by cell type into separate analysis units, giving 38 units from 36 BioProjects. Cell types in studydesign.xlsx are recorded at a general level; the specific cell line is given in each file name.
 
 Code
-code1.ipynb — gene-level aggregation, filtering, per-study differential expression (PyDESeq2), robust-gene selection, per-pathogen PCA.
-code2.ipynb — combined log fold-change matrix, UMAP, supervised classification with cross-study validation.
+01_per_pathogen_deseq2.ipynb is gene-level aggregation, filtering, per-study differential expression (PyDESeq2), robust-gene selection, per-pathogen PCA.
+02_classification.ipynb is combined log fold-change matrix, UMAP, supervised classification with cross-study validation.
 
 Cell outputs are retained. File paths are absolute and machine-specific so update the paths at the top of each notebook before running.
 
@@ -18,4 +18,4 @@ combined_lfc_matrix.tsv (per-sample log₂ fold change relative to study-matched
 
 Requirements
 
-Python 3.13.5; Key packages: pydeseq2, scikit-learn, umap-learn, pandas, numpy.# Ocular-Pathogen-Classification
+Python 3.13.5; Key packages: pydeseq2, scikit-learn, umap-learn, pandas, numpy
